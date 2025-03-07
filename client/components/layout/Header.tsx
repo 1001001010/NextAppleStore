@@ -49,7 +49,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <div className="relative hidden md:flex w-40 lg:w-64">
               <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
-              <Input placeholder="Поиск" className="pl-8" />
+              <Input placeholder="Search" className="pl-8" />
             </div>
             <Link href="/account">
               <Button
@@ -58,7 +58,7 @@ export default function Header() {
                 className="hover:text-primary"
               >
                 <User className="h-5 w-5" />
-                <span className="sr-only">Аккаунт</span>
+                <span className="sr-only">Account</span>
               </Button>
             </Link>
             <Link href="/favorites">
@@ -68,7 +68,7 @@ export default function Header() {
                 className="hover:text-primary"
               >
                 <Heart className="h-5 w-5" />
-                <span className="sr-only">Избранное</span>
+                <span className="sr-only">Favorites</span>
               </Button>
             </Link>
             <Link href="/cart">
@@ -81,7 +81,7 @@ export default function Header() {
                 <Badge className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0">
                   2
                 </Badge>
-                <span className="sr-only">Корзина</span>
+                <span className="sr-only">Cart</span>
               </Button>
             </Link>
           </div>

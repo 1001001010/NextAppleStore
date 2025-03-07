@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="container mx-auto max-w-7xl px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-semibold text-lg mb-4">Продукты</h3>
+              <h3 className="font-semibold text-lg mb-4">Products</h3>
               <ul className="space-y-3">
                 <li>
                   <Link
@@ -52,14 +52,14 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-4">Магазин</h3>
+              <h3 className="font-semibold text-lg mb-4">Store</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Как купить
+                    How to Buy
                   </Link>
                 </li>
                 <li>
@@ -67,7 +67,7 @@ export default function Footer() {
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Доставка
+                    Delivery
                   </Link>
                 </li>
                 <li>
@@ -75,7 +75,7 @@ export default function Footer() {
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Оплата
+                    Payment
                   </Link>
                 </li>
                 <li>
@@ -83,7 +83,7 @@ export default function Footer() {
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Кредит
+                    Credit
                   </Link>
                 </li>
                 <li>
@@ -97,14 +97,14 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-4">Поддержка</h3>
+              <h3 className="font-semibold text-lg mb-4">Support</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Сервисный центр
+                    Service Center
                   </Link>
                 </li>
                 <li>
@@ -112,7 +112,7 @@ export default function Footer() {
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Гарантия
+                    Warranty
                   </Link>
                 </li>
                 <li>
@@ -120,7 +120,7 @@ export default function Footer() {
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Руководства
+                    Manuals
                   </Link>
                 </li>
                 <li>
@@ -128,7 +128,7 @@ export default function Footer() {
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Часто задаваемые вопросы
+                    Frequently Asked Questions
                   </Link>
                 </li>
                 <li>
@@ -136,20 +136,20 @@ export default function Footer() {
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Контакты
+                    Contact
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-4">О компании</h3>
+              <h3 className="font-semibold text-lg mb-4">About Us</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    О нас
+                    About Us
                   </Link>
                 </li>
                 <li>
@@ -157,7 +157,7 @@ export default function Footer() {
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Новости
+                    News
                   </Link>
                 </li>
                 <li>
@@ -165,7 +165,7 @@ export default function Footer() {
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Вакансии
+                    Careers
                   </Link>
                 </li>
                 <li>
@@ -173,7 +173,7 @@ export default function Footer() {
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Политика конфиденциальности
+                    Privacy Policy
                   </Link>
                 </li>
                 <li>
@@ -181,7 +181,7 @@ export default function Footer() {
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Условия использования
+                    Terms of Use
                   </Link>
                 </li>
               </ul>
@@ -192,7 +192,7 @@ export default function Footer() {
               <span className="font-semibold">AppleStore</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              © 2025 AppleStore. Все права защищены.
+              © 2025 AppleStore. All rights reserved.
             </p>
             <div className="flex gap-4">
               <Link
