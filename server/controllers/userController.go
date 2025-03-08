@@ -130,12 +130,14 @@ func SignIn(c *gin.Context) {
 		return
 	}
 
-	//send it back
 	http.SetCookie(c.Writer, &http.Cookie{
 		Name:     "token",
 		Value:    tokenString,
 		HttpOnly: true,
+		Secure:   true,
+		SameSite: http.SameSiteNoneMode,
 		MaxAge:   int((time.Hour * 24 * 30).Seconds()),
+		Path:     "/",
 	})
 
 	c.JSON(http.StatusOK, gin.H{"successLogin": "Login successful!"})

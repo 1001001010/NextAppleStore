@@ -19,6 +19,7 @@ import type { AppDispatch } from "@/redux/store";
 import { loginUser } from "@/redux/slices/authSlice/asyncActions";
 import { AtSign, User, Lock, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
+import { useRouter } from "next/navigation";
 
 export default function Login() {
   const [formData, setFormData] = useState({
@@ -32,6 +33,7 @@ export default function Login() {
   });
 
   const dispatch: AppDispatch = useDispatch();
+  const router = useRouter();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { id, value } = e.target;
@@ -40,7 +42,6 @@ export default function Login() {
       [id]: value,
     }));
 
-    // Сбрасываем ошибку при вводе
     if (errors[id as keyof typeof errors]) {
       setErrors((prev) => ({
         ...prev,
@@ -56,7 +57,7 @@ export default function Login() {
       const resultAction = await dispatch(loginUser(formData));
 
       if (resultAction.meta.requestStatus === "fulfilled") {
-        toast("Authorization Successful!");
+        router.push("/profile");
       } else if (resultAction.meta.requestStatus === "rejected") {
         const errorData = resultAction.payload;
         if (errorData) {

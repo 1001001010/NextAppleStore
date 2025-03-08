@@ -42,14 +42,14 @@ export default function HomePage() {
               iPhone 15 Pro
             </h1>
             <p className="text-xl md:text-2xl max-w-2xl">
-              Титановый. Мощный. Профессиональный.
+              Titanium. Powerful. Pro.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <Button
                 size="lg"
                 className="bg-white text-black hover:bg-white/90"
               >
-                Купить сейчас
+                Buy Now
                 <ShoppingCart className="ml-2 h-4 w-4" />
               </Button>
               <Button
@@ -57,7 +57,7 @@ export default function HomePage() {
                 variant="outline"
                 className="border-white text-white hover:bg-white/10"
               >
-                Узнать больше
+                Learn More
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
@@ -67,7 +67,7 @@ export default function HomePage() {
         {/* Categories Section */}
         <section className="py-16 bg-secondary">
           <div className="container mx-auto max-w-7xl px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Категории</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Categories</h2>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
               <Card className="bg-background hover:shadow-lg transition-all hover:translate-y-[-5px]">
                 <CardContent className="flex flex-col items-center justify-center p-6">
@@ -107,7 +107,7 @@ export default function HomePage() {
         <section className="py-16">
           <div className="container mx-auto max-w-5xl px-4">
             <h2 className="text-3xl font-bold text-center mb-10">
-              Популярные товары
+              Featured Products
             </h2>
             <Tabs
               defaultValue="iphone"
@@ -128,24 +128,24 @@ export default function HomePage() {
                   {[
                     {
                       name: "iPhone 15 Pro",
-                      price: "129 990 ₽",
+                      price: "$1,299",
                       image: "/placeholder.svg?height=400&width=400",
-                      badge: "Новинка",
+                      badge: "New",
                     },
                     {
                       name: "iPhone 15",
-                      price: "99 990 ₽",
+                      price: "$999",
                       image: "/placeholder.svg?height=400&width=400",
-                      badge: "Новинка",
+                      badge: "New",
                     },
                     {
                       name: "iPhone 14 Pro",
-                      price: "109 990 ₽",
+                      price: "$1,099",
                       image: "/placeholder.svg?height=400&width=400",
                     },
                     {
                       name: "iPhone 14",
-                      price: "79 990 ₽",
+                      price: "$799",
                       image: "/placeholder.svg?height=400&width=400",
                     },
                   ].map((product, index) => (
@@ -159,23 +159,23 @@ export default function HomePage() {
                   {[
                     {
                       name: "iPad Pro",
-                      price: "99 990 ₽",
+                      price: "$999",
                       image: "/placeholder.svg?height=400&width=400",
                       badge: "M2",
                     },
                     {
                       name: "iPad Air",
-                      price: "79 990 ₽",
+                      price: "$799",
                       image: "/placeholder.svg?height=400&width=400",
                     },
                     {
                       name: "iPad",
-                      price: "49 990 ₽",
+                      price: "$499",
                       image: "/placeholder.svg?height=400&width=400",
                     },
                     {
                       name: "iPad mini",
-                      price: "59 990 ₽",
+                      price: "$599",
                       image: "/placeholder.svg?height=400&width=400",
                     },
                   ].map((product, index) => (
@@ -189,25 +189,25 @@ export default function HomePage() {
                   {[
                     {
                       name: 'MacBook Pro 16"',
-                      price: "249 990 ₽",
+                      price: "$2,499",
                       image: "/placeholder.svg?height=400&width=400",
                       badge: "M3 Max",
                     },
                     {
                       name: 'MacBook Pro 14"',
-                      price: "189 990 ₽",
+                      price: "$1,899",
                       image: "/placeholder.svg?height=400&width=400",
                       badge: "M3 Pro",
                     },
                     {
                       name: 'MacBook Air 15"',
-                      price: "149 990 ₽",
+                      price: "$1,499",
                       image: "/placeholder.svg?height=400&width=400",
                       badge: "M2",
                     },
                     {
                       name: "Mac mini",
-                      price: "79 990 ₽",
+                      price: "$799",
                       image: "/placeholder.svg?height=400&width=400",
                       badge: "M2",
                     },
@@ -222,24 +222,24 @@ export default function HomePage() {
                   {[
                     {
                       name: "Apple Watch Ultra 2",
-                      price: "89 990 ₽",
+                      price: "$899",
                       image: "/placeholder.svg?height=400&width=400",
-                      badge: "Новинка",
+                      badge: "New",
                     },
                     {
                       name: "Apple Watch Series 9",
-                      price: "49 990 ₽",
+                      price: "$499",
                       image: "/placeholder.svg?height=400&width=400",
-                      badge: "Новинка",
+                      badge: "New",
                     },
                     {
                       name: "Apple Watch SE",
-                      price: "29 990 ₽",
+                      price: "$299",
                       image: "/placeholder.svg?height=400&width=400",
                     },
                     {
                       name: "Apple Watch Nike",
-                      price: "39 990 ₽",
+                      price: "$399",
                       image: "/placeholder.svg?height=400&width=400",
                     },
                   ].map((product, index) => (
@@ -251,7 +251,7 @@ export default function HomePage() {
 
             <div className="flex justify-center mt-10">
               <Button variant="outline" size="lg">
-                Смотреть все{" "}
+                View all{" "}
                 {activeTab === "iphone"
                   ? "iPhone"
                   : activeTab === "ipad"
@@ -269,7 +269,7 @@ export default function HomePage() {
         <section className="py-20 bg-secondary">
           <div className="container mx-auto max-w-7xl px-4">
             <h2 className="text-3xl font-bold text-center mb-12">
-              Почему выбирают нас
+              Why Choose Us
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card className="bg-background hover:shadow-lg transition-all hover:translate-y-[-5px]">
@@ -277,12 +277,12 @@ export default function HomePage() {
                   <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <ShoppingCart className="h-7 w-7 text-primary" />
                   </div>
-                  <CardTitle>Официальная гарантия</CardTitle>
+                  <CardTitle>Official Warranty</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Все устройства имеют официальную гарантию производителя 1
-                    год
+                    All devices come with a 1-year official manufacturer
+                    warranty
                   </p>
                 </CardContent>
               </Card>
@@ -292,12 +292,11 @@ export default function HomePage() {
                   <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <Smartphone className="h-7 w-7 text-primary" />
                   </div>
-                  <CardTitle>Сервисное обслуживание</CardTitle>
+                  <CardTitle>Service & Support</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Собственный сервисный центр с квалифицированными
-                    специалистами
+                    Our own service center with qualified specialists
                   </p>
                 </CardContent>
               </Card>
@@ -307,11 +306,11 @@ export default function HomePage() {
                   <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <Headphones className="h-7 w-7 text-primary" />
                   </div>
-                  <CardTitle>Поддержка 24/7</CardTitle>
+                  <CardTitle>24/7 Support</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Круглосуточная поддержка клиентов по телефону и онлайн
+                    Round-the-clock customer support by phone and online
                   </p>
                 </CardContent>
               </Card>
@@ -345,7 +344,7 @@ function ProductCard({
         <h3 className="font-medium text-lg">{product.name}</h3>
         <p className="text-muted-foreground mb-4">{product.price}</p>
         <div className="flex gap-2">
-          <Button className="w-full">Купить</Button>
+          <Button className="w-full">Buy</Button>
           <Button
             variant="outline"
             size="icon"
